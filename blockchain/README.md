@@ -1,15 +1,15 @@
-# Basic Sample Hardhat Project
+# Getting started
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+1 - Run the blockchain node with:
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
 ```
+pnpm run node
+```
+
+2 - Deploy the contract to the localhost node created previously
+
+```
+pnpm run deploy
+```
+
+## That's it. You're ready to go to the client side part.

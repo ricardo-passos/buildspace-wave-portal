@@ -1,0 +1,37 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "contractTypes": "pnpm exec typechain --target ethers-v5 --out-dir src/types/contracts './src/web3/ABIs/*.json'"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.8.6",
+    "@chakra-ui/theme": "^1.14.0",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@ethersproject/providers": "^5.5.3",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "ethers": "^5.6.0",
+    "events": "^3.3.0",
+    "framer-motion": "^6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "6"
+  },
+  "devDependencies": {
+    "@typechain/ethers-v5": "^9.0.0",
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@vitejs/plugin-react": "^1.0.7",
+    "typechain": "^7.0.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  }
+}

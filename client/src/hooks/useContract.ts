@@ -6,17 +6,20 @@ import { useProvider } from './useProvider'
 // web3
 import { config } from '../web3/config'
 
+// types
+import type { WavePortal } from '../types/contracts'
+
 type Props = {
   name: 'WavePortal'
   onlyOnActiveAccount?: boolean
 }
 
-function useContract<T>({
+function useContract({
   name: contractName,
   onlyOnActiveAccount = false,
 }: Props) {
   // states
-  const [contract, setContract] = useState<T>()
+  const [contract, setContract] = useState<WavePortal>()
 
   // hooks
   const { provider, signer } = useProvider()

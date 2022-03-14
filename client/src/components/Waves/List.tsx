@@ -5,9 +5,6 @@ import { useWeb3React } from '@web3-react/core'
 // hooks
 import { useContract } from '../../hooks/useContract'
 
-// types
-import type { WavePortal } from '../../types/contracts'
-
 type Wave = {
   address: string
   timestamp: Date
@@ -20,10 +17,9 @@ function WaveList() {
 
   // hooks
   const { active } = useWeb3React()
-  const { contract: wavePortalContract } = useContract<WavePortal>({
+  const { contract: wavePortalContract } = useContract({
     name: 'WavePortal',
   })
-
 
   // loads the new comments
   useEffect(() => {

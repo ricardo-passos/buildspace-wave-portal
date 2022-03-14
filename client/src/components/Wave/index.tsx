@@ -5,9 +5,6 @@ import { Flex, Button, FormControl, Input, FormLabel } from '@chakra-ui/react'
 // hooks
 import { useContract } from '../../hooks/useContract'
 
-// types
-import type { WavePortal } from '../../types/contracts'
-
 function Wave() {
   // states
   const [message, setMessage] = useState('')
@@ -15,7 +12,7 @@ function Wave() {
 
   // hooks
   const { active } = useWeb3React()
-  const { contract: wavePortalContract } = useContract<WavePortal>({
+  const { contract: wavePortalContract } = useContract({
     name: 'WavePortal',
     onlyOnActiveAccount: true,
   })
@@ -53,7 +50,7 @@ function Wave() {
 
   return (
     <Flex align='flex-end' gap={5}>
-      <FormControl >
+      <FormControl>
         <FormLabel htmlFor='message'>Your message: </FormLabel>
         <Input
           id='message'

@@ -28,8 +28,6 @@ function useProvider() {
     }
   }, [active])
 
-  console.log({ provider, signer })
-
   return { provider, signer }
 }
 

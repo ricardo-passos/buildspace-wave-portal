@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "contractTypes": "pnpm exec typechain --target ethers-v5 --out-dir src/types/contracts './src/web3/ABIs/*.json'"
   },

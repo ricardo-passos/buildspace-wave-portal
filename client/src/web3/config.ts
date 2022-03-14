@@ -22,7 +22,7 @@ const devConfig = {
 const prodConfig = {
   address: import.meta.env.VITE_PROD_WAVE_PORTAL_SMART_CONTRACT_ADDRESS,
   supportedChainIds: [4],
-  url: '',
+  url: 'https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161', // MetaMask default Rinkeby RPC URL
   ...commonConfig,
 }
 

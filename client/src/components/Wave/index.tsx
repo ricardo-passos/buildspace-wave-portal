@@ -43,8 +43,6 @@ function Wave() {
       } finally {
         setSendingMessage(false)
       }
-    } else {
-      console.log("Ethereum object doesn't exist!")
     }
   }
 
